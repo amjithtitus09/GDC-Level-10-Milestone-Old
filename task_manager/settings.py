@@ -134,3 +134,7 @@ CELERY_RESULT_BACKEND = "redis://localhost:6379"
 
 AUTH_USER_MODEL = 'tasks.User'
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://gdc-level-10-milestone-production.up.railway.app'
+]
